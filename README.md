@@ -16,7 +16,8 @@ Este é um projeto simples de Landing Page para uma academia chamada Fit-Club, c
 
 ## Layout
 <div align="center">
-  
+  <img src="https://github.com/Jotta-gab/Fit-Club-Project/assets/134981382/f3cb0674-50ab-44b1-b8c6-666393defb23" width="1000px"/> 
+
 </div>
 
 ## Como usar?
