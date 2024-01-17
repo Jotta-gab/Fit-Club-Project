@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css"/>
+  <link rel="stylesheet" href="/assets/css/media.css">
+  <link rel="icon" href="/assets/img/icons8-academia-50.png" type="image/x-icon">
+  <title>FitClub Academia</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav__logo">
+      <a href="#"><img src="/assets/img/academia logo.png" alt="logo fitclub" /></a>
+    </div>
+    <ul class="nav__links">
+      <li class="link"><a href="#sobre">Quem somos</a></li>
+      <li class="link"><a href="#programa">Serviços</a></li>
+      <li class="link"><a href="#calculadora">Calculadora</a></li>
+      <li class="link"><a href="#preco">Planos</a></li>
+      <li class="link"><a href="#avaliacoes">Feed-backs</a></li>
+    </ul>
+    <a class="btn" href="#junte">Junte-se Agora</a>
+  </nav>
+
+  <header class="section__container header__container">
+    <div class="header__ap">
+      <div class="header__content">
+        <h4>MELHOR FORMA FÍSICA DA CIDADE</h4>
+        <h1>MODELE SEU <span id="corpo">CORPO</span></h1>
+        <p>
+          Liberte seu potencial e embarque em uma jornada em direção a um você mais forte, mais saudável e mais
+          confiante. Inscreva-se agora no 'Modele Seu Corpo' e testemunhe a incrível transformação que seu corpo é capaz
+          de realizar!
+        </p>
+        <a href="https://whatsapp.com" target="_blank" class="btn"><i class="icon-intro ri-whatsapp-fill"></i>Entrar em
+          Contato</a>
+      </div>
+      <div class="header__image">
+        <img src="/assets/img/138413-woman-dumbbell-young-fit-free-png-hq.png" alt="Mulher treinando" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section__container about__container" id="sobre">
+      <div class="section__header">
+        <h2>QUEM SOMOS?</h2>
+      </div>
+      <div class="section__subheader">
+        <p>
+          Bem-vindo à Fitclub, sua melhor escolha para alcançar seus objetivos de fitness.
+          Nós nos dedicamos a proporcionar um ambiente acolhedor e motivador,
+          onde você pode transformar sua vida através do exercício físico e do bem-estar.
+
+          Com uma equipe de treinadores especializados e instalações de ponta,
+          estamos comprometidos em ajudar você a atingir o seu melhor físico e mental.
+          Junte-se a nós nesta jornada emocionante rumo à saúde e ao condicionamento físico.
+        </p>
+      </div>
+    </section>
+
+    <section class="section__container explore__container" id="programa">
+      <div class="explore__header">
+        <h2 class="section__header">SERVIÇOS</h2>
+      </div>
+      <div class="explore__grid">
+        <div class="explore__card">
+          <span><i class="ri-boxing-fill"></i></span>
+          <h4>Força</h4>
+          <p>
+            Abraçe a essência da força, explorando suas diversas dimensões física, mental e emocional.
+          </p>
+          <a href="#junte">Junte-se Agora <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-heart-pulse-fill"></i></span>
+          <h4>Fitness Físico</h4>
+          <p>
+            Engloba uma variedade de atividades que melhoram a saúde, força, flexibilidade e bem-estar geral.
+          </p>
+          <a href="#junte">Junte-se Agora <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-run-line"></i></span>
+          <h4>Perda de Gordura</h4>
+          <p>
+            Através de uma combinação de rotinas de exercícios e orientação especializada, vamos capacitá-lo a alcançar
+            seus objetivos.
+          </p>
+          <a href="#junte">Junte-se Agora <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-shopping-basket-fill"></i></span>
+          <h4>Ganho de Peso</h4>
+          <p>
+            Projetado para indivíduos, nosso programa oferece uma abordagem eficaz para ganhar peso de maneira
+            sustentável.
+          </p>
+          <a href="#junte">Junte-se Agora <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container bmi__container" id="calculadora">
+      <h2 class="section__header">CALCULADORA DE IMC</h2>
+      <p class="section__subheader">Calcule seu indicie de massa corporal</p>
+      <form id="bmiForm">
+        <label for="height">Altura (metros):</label>
+        <input type="number" id="height" step="0.01" required placeholder="Ex:1.90" />
+
+        <label for="weight">Peso (kg):</label>
+        <input type="number" id="weight" step="0.1" required placeholder="Ex:62.5" />
+
+        <button class="price__btn" type="button" onclick="calculateBMI()">Calcular IMC</button>
+      </form>
+
+      <div id="result" class="bmi__result"></div>
+    </section>
+
+    <section class="section__container price__container" id="preco">
+      <h2 class="section__header">NOSSO PLANO DE PREÇOS</h2>
+      <p class="section__subheader">
+        Nosso plano de preços vem com várias categorias de associação, cada uma adaptada para atender a diferentes
+        preferências e aspirações fitness.
+      </p>
+      <div class="price__grid">
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Plano Básico</h4>
+            <h3>$16</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Plano de treino inteligente
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Treinos em casa
+            </p>
+          </div>
+          <button class="btn price__btn">Junte-se Agora</button>
+        </div>
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Plano Semanal</h4>
+            <h3>$25</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Academias PRO
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Plano de treino inteligente
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Treinos em casa
+            </p>
+          </div>
+          <button class="btn price__btn">Junte-se Agora</button>
+        </div>
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Plano Mensal</h4>
+            <h3>$45</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Academias e Aulas ELITE
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Academias PRO
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Plano de treino inteligente
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Treinos em casa
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Treinamento Pessoal
+            </p>
+          </div>
+          <button class="btn price__btn">Junte-se Agora</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container form__container" id="junte">
+      <h2 class="section__header">JUNTE-SE AGORA</h2>
+      <p class="section__subheader">Iremos te mandar mais informações via e-mail, estamos ansiosos para ver você
+        treinando conosco!</p>
+      <form id="simpleForm" onsubmit="validateForm(event)">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required placeholder="Seu nome" />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="aaaaaaa@aaaaa.com" />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section class="review">
+      <div class="section__container review__container" id="avaliacoes">
+        <h2>ALAVIAÇÕES DE NOSSOS CLIENTES</h2>
+        <div class="slider">
+          <div class="item"  id="cliente1">
+            <h1 class="item-titulo">Larrisa</h1>
+            <p class="item-texto">A academia oferece uma variedade incrível de equipamentos de última geração,
+              proporcionando uma experiência de treino completa para todos os níveis de condicionamento físico.</p>
+            <p>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </p>
+
+          </div>
+          <div class="item" id="cliente2">
+            <h1 class="item-titulo">Paulo</h1>
+            <p class="item-texto">A academia se destaca pelo compromisso com a segurança dos seus membros,
+              proporcionando um ambiente saudável e livre de preocupações para todos os frequentadores.</p>
+
+            <p>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </p>
+
+          </div>
+          <div class="item" id="cliente3">
+            <h1 class="item-titulo">Evandro</h1>
+            <p class="item-texto">A diversidade de programas e aulas disponíveis na academia atendem às necessidades de
+              todos, desde iniciantes até atletas avançados.</p>
+
+            <p>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </p>
+
+          </div>
+          <div class="item" id="cliente4">
+            <h1 class="item-titulo">Fernanda</h1>
+            <p class="item-texto">O ambiente e a equipe altamente qualificada, motiva os membros a alcançarem seus
+              objetivos de forma saudável.</p>
+
+            <p>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </p>
+
+          </div>
+          <button id="next">></button>
+          <button id="prev"><</button>
+        </div>
+      </div>
+    </section>
+
+    <button id="scrollTopBtn" onclick="scrollToTop()">></button>
+
+  </main>
+
+  <footer class="section__container footer__container">
+    <div class="footer__col">
+      <p>
+        Dê o primeiro passo em direção a um você mais saudável e mais forte com nossos planos de preços imbatíveis.
+        Vamos suar, alcançar e conquistar juntos!
+      </p>
+      <div class="footer__socials">
+        <a href="https://facebook.com" target="_blank"><i class="ri-facebook-fill"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="ri-instagram-line"></i></a>
+        <a href="https://whatsapp.com" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h4>Contato</h4>
+      <a href="#junte">Entre em Contato</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos e Condições</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Sobre</h4>
+      <a href="#sobre">Sobre</a>
+      <a href="#programa">Serviços</a>
+      <a href="#preco">Preço</a>
+      <a href="#avaliacoes">Avaliações</a>
+    </div>
+  </footer>
+  <div class="footer__bar">
+    <p class="footer__bar__p">Direitos Autorais © 2023 João Gabriel . Todos os direitos reservados.</p>
+  </div>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
