@@ -23,5 +23,5 @@ Este é um projeto simples de Landing Page para uma academia chamada Fit-Club, c
 ## Como usar?
 - Os usuários podem acessar a Landing Page diretamente no navegador.
 
-## Link do Projeto: (Adicione o link aqui)
+## Link do Projeto:
 - https://fit-club-sigma.vercel.app/
